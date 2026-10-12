@@ -1,0 +1,96 @@
+{
+  "task": "T-2026-0042",
+  "phase": "canonical library introduction and field parity correction; no mobile migration",
+  "source_checkout": "C:\\Users\\feng.wang\\Documents\\Codex\\2026-10-09\\test-local-codex-chat-creation\\outputs\\TempoMobileApp\\tempomobileapp",
+  "files": [
+    {
+      "original": "components/ui/web/button/Btn.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "867560d9c2f1495bd32af1b46ed136265a4699b43b839fbd4ea54dd55de83917",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/button/Btn.tsx",
+      "pilot_source": "packages/ui/src/actions/GButton.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    },
+    {
+      "original": "components/ui/web/form/TextInputField.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "65cb6fa8fc501e3da6ae4fd5be8ba36646cd4b3554d163b7b6c8e072ef4f4fd0",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/form/TextInputField.tsx",
+      "pilot_source": "packages/ui/src/fields/TextInputField.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    },
+    {
+      "original": "components/ui/web/form/NumberInputField.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "fb3409ed8aba978ab41e9a222fed1c0de0c234792a2e0291b06960b48f43b95d",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/form/NumberInputField.tsx",
+      "pilot_source": "packages/ui/src/fields/NumberInputField.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    },
+    {
+      "original": "components/ui/web/form/CheckBox.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "40acc43ac73d907caf0f11a578e3bb1c02bf3325f8ec75dcde6ae45cc21a70ce",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/form/CheckBox.tsx",
+      "pilot_source": "packages/ui/src/fields/CheckBox.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    },
+    {
+      "original": "components/ui/web/form/DropdownGroup.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "eec9cb442c40acb45fd9d6172eed9b2bed2755d42a4a7b09fe6e361a722c1de4",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/form/DropdownGroup.tsx",
+      "pilot_source": "packages/ui/src/fields/RichDropDown.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    },
+    {
+      "original": "components/ui/web/form/FieldClearButton.tsx",
+      "revision": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+      "sha256": "0c0b1d4c73b49a10673979fec56b4a30af2abf2903579a4754782594bb68965d",
+      "snapshot": "packages/ui/provenance/mobileapp/components/ui/web/form/FieldClearButton.tsx",
+      "pilot_source": "packages/ui/src/fields/FieldClearButton.tsx",
+      "ownership": "staging copy; production mobile implementation remains authoritative until separately approved transfer",
+      "initial_changes": [
+        "exported prop types",
+        "relative UI-only platform and overlay ports"
+      ]
+    }
+  ],
+  "baseline_style_contract": "Control styles retained; consumer-supplied form focus/error decoration matches source geometry. Actual-source web harness comparison; production shell/native not certified.",
+  "native_status": "source entry retained; device/emulator and native dependency validation deferred",
+  "pilot_adjustments": [
+    "Exported props and named/default public subpaths",
+    "UI-only relative platform ports; browser local glyph icons, retained native Expo/gesture ports",
+    "Purpose-built web overlay with placement, focus return/outside/Escape cleanup",
+    "Additive optional theme border/primary/overlay tokens; default source styles retained",
+    "Pilot web ARIA states/stable checkbox name and Space/Arrow activation; native state props preserved",
+    "Narrow web overflow type accommodation; no numeric default/value/callback rewrite",
+    "Catalogue removed incorrect global 2px offset outline; consumer passes SingleForm/TabForm 1px border and 3px shadow via style",
+    "Web icons now reuse the exact SimpleLineIcons font from mobileapp locked @expo/vector-icons@14.1.0, integrity verified",
+    "Dropdown searchStyle accepts consumer-owned focus colour; trigger preserves incoming style ownership",
+    "UI-only overlay now matches source anchor width, pale border and directional shadow; outside clicks no longer steal destination focus"
+  ],
+  "production_migration": "not performed; intentional staging overlap",
+  "ownership_transfer": "deferred pending explicit approval and real mobile consumer/regression checks",
+  "correction_task": "../tempoagenttasks/tasks/t-2026-0042"
+}

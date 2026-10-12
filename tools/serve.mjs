@@ -1,0 +1,3 @@
+import http from 'node:http';import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve('dist/catalogue');const port=Number(process.env.TEMPO_UI_PORT??4173);
+http.createServer((req,res)=>{const relative=decodeURIComponent(new URL(req.url,'http://127.0.0.1').pathname);const file=path.resolve(root,'.'+(relative==='/'?'/index.html':relative));if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}if(!fs.existsSync(file)){res.writeHead(404).end();return;}res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':'text/html');res.end(fs.readFileSync(file));}).listen(port,'127.0.0.1',()=>console.log(`Tempo UI local catalogue http://127.0.0.1:${port}`));

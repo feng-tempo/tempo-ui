@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "noEmit": true,
+    "rootDir": ".",
+    "paths": {
+      "@tempo/ui": [
+        "./packages/ui/dist/types/index.d.ts"
+      ]
+    },
+    "resolveJsonModule": true
+  },
+  "include": [
+    "apps/catalogue/**/*.tsx",
+    "apps/catalogue/**/*.ts"
+  ],
+  "exclude": []
+}
