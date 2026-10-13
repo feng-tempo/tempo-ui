@@ -1,0 +1,14 @@
+{
+  "original": {
+    "inputHeight": 68,
+    "marginBottom": "22px",
+    "footerHeight": 22
+  },
+  "packaged": {
+    "inputHeight": 68,
+    "marginBottom": "22px",
+    "footerHeight": 22
+  },
+  "currentUsage": "Roadmap panel passes no override; input 68px plus footer allocation 22px",
+  "historicalNote": "T-0021 92px note is not current executable height"
+}

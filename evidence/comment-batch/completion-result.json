@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "version": "@tempo/ui@0.1.0-dev.2",
+  "publicComponents": [
+    "TempoCommentDisplay",
+    "TempoCommentPreviewList",
+    "NavBtn",
+    "ConfirmPopup",
+    "TempoCommentThreadCard"
+  ],
+  "checks": {
+    "typescript": [
+      "package declarations",
+      "catalogue",
+      "packed consumer"
+    ],
+    "packageTests": 12,
+    "commentBrowserChecks": 12,
+    "existingFieldChecks": 20,
+    "existingBrowserChecks": 14,
+    "packedConsumerChecks": 4,
+    "packedMatchedFiles": 132
+  },
+  "visual": {
+    "threadPngBytesEqual": true,
+    "previewPngBytesEqual": true,
+    "ports": [
+      "exact locked glyph fonts",
+      "package GButton known prior parity",
+      "UI confirmation/error/tooltip/link hosts"
+    ],
+    "limits": [
+      "source comments and textarea compiled read-only",
+      "not a production shell/native rendering"
+    ],
+    "editFocusPngBytesEqual": true
+  },
+  "sourceGeometry": {
+    "original": {
+      "inputHeight": 68,
+      "marginBottom": "22px",
+      "footerHeight": 22
+    },
+    "packaged": {
+      "inputHeight": 68,
+      "marginBottom": "22px",
+      "footerHeight": 22
+    },
+    "currentUsage": "Roadmap panel passes no override; input 68px plus footer allocation 22px",
+    "historicalNote": "T-0021 92px note is not current executable height"
+  },
+  "preservation": {
+    "trackedFiles": 2803,
+    "priorTaskRecords": 220,
+    "changedProtectedPaths": [],
+    "sourceRepos": [
+      {
+        "repo": "tempomobileapp",
+        "status": ""
+      },
+      {
+        "repo": "tempoagent",
+        "status": ""
+      },
+      {
+        "repo": "tempo-core",
+        "status": ""
+      },
+      {
+        "repo": "tempofunction",
+        "status": ""
+      }
+    ]
+  },
+  "tarballSha256": "6bbcbe4b288abdfd5264211e1558f802e9f6b73f373f4c913842915b6948da88",
+  "limits": [
+    "native/Expo/RHF/production integration and ownership transfer unrun",
+    "full accessibility audit unrun",
+    "default/focus image parity uses declared read-only web ports, not full mobile shell",
+    "prior generated chunks/artifacts and intermediate failure image retained; no deletion",
+    "existing pointerEvents/native animation warnings and source Expo tsconfig warning recorded"
+  ]
+}

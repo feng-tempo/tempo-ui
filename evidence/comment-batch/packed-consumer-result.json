@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "new root/subpath identity",
+    "comment display/preview/thread render from packed artifact",
+    "single React runtime",
+    "all source/dist bytes match artifact"
+  ],
+  "matchedFiles": 132,
+  "native": "unrun",
+  "version": "0.1.0-dev.2"
+}

@@ -1,0 +1,50 @@
+{
+  "sourceCommit": "ab9efdd7a75469df2f8fd2451568fd4285d39e30",
+  "sourceCheckout": "../tempomobileapp",
+  "files": [
+    {
+      "source": "comment/TempoCommentDisplay.tsx",
+      "sha256": "c1f44dce365eca23008ca210770431ddb41e69c5896ddd8c5436bc8f3e0a7260"
+    },
+    {
+      "source": "comment/TempoCommentPreviewList.tsx",
+      "sha256": "9d6a774eea6b87ad02bb90116c95a622229da0fd45363ceadccc6df436bc4fe0"
+    },
+    {
+      "source": "comment/TempoCommentThreadCard.tsx",
+      "sha256": "397b86ce9207972073044c17a81df74421cf34c01e0e531aa2b86a7584c4334f"
+    },
+    {
+      "source": "comment/tempoCommentDate.ts",
+      "sha256": "99cdcb5418f0bbd01b5ccbbeae9bd084dc066051ab88d65ea52b57278718c2cf"
+    },
+    {
+      "source": "button/NavBtn.tsx",
+      "sha256": "064dfc2a43e2039e93071e62ff796d6878ad6e31818d6e3122ad61d102de6743"
+    },
+    {
+      "source": "general/ConfirmPopup.tsx",
+      "sha256": "d54ad2540e5f325bf7dc3ed4ad2d7f0a22b1746d2bf1f75807c1bc7b379c5194"
+    },
+    {
+      "source": "form/TextAreaField.tsx",
+      "sha256": "ef2c9cb29aff5c89afb50c93f9082e8fc2c954e7c766ff6885f2bc46eee314e8"
+    },
+    {
+      "source": "general/ErrorPanel.tsx",
+      "sha256": "f9ad10aa42e2803b9641598d80cae5b2424a830293bd904a0987cbc086074dd9"
+    }
+  ],
+  "iconPackage": {
+    "version": "14.1.0",
+    "integrity": "sha512-7T09UE9h8QDTsUeMGymB4i+iqvtEeaO5VvUjryFB4tugDTG/bkzViWA74hm5pfjjDEhYMXWaX112mcvhccmIwQ==",
+    "verified": true
+  },
+  "ownership": "tempo-ui staging implementation; original mobileapp unmigrated",
+  "differences": [
+    "structural view and async mutation adapters instead of Core/app dependencies",
+    "callback-only More action; consumer interaction metadata",
+    "theme focus/action ports and semantic labels",
+    "confirmation outcome/rejection/focus lifecycle"
+  ]
+}

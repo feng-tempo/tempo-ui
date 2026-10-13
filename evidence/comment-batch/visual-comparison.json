@@ -1,0 +1,14 @@
+{
+  "threadPngBytesEqual": true,
+  "previewPngBytesEqual": true,
+  "ports": [
+    "exact locked glyph fonts",
+    "package GButton known prior parity",
+    "UI confirmation/error/tooltip/link hosts"
+  ],
+  "limits": [
+    "source comments and textarea compiled read-only",
+    "not a production shell/native rendering"
+  ],
+  "editFocusPngBytesEqual": true
+}

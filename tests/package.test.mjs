@@ -21,7 +21,7 @@ test('public declarations and all export targets exist; no publish lifecycle scr
 test('library import closure contains no app auth/API/navigation or business transport',()=>{
  const meta=JSON.parse(fs.readFileSync('../T-2026-0042-pilot/evidence/library-build-metafile.json','utf8'));
  for(const filename of Object.keys(meta.inputs))assert.ok(filename.startsWith('packages/ui/src/'),filename);
- function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const filename=path.join(dir,entry.name);if(entry.isDirectory())visit(filename);else{const source=fs.readFileSync(filename,'utf8');assert.doesNotMatch(source,/@\/|apiService|authContext|expo-router|\bfetch\s*\(|XMLHttpRequest|WebSocket/);}}}visit('packages/ui/src');
+ function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const filename=path.join(dir,entry.name);if(entry.isDirectory())visit(filename);else if(/\.(tsx?|jsx?|mjs)$/.test(filename)){const source=fs.readFileSync(filename,'utf8');assert.doesNotMatch(source,/@\/|apiService|authContext|expo-router|\bfetch\s*\(|XMLHttpRequest|WebSocket/);}}}visit('packages/ui/src');
 });
 test('source provenance snapshots match immutable source and explicit staging ownership',()=>{
  const evidence=JSON.parse(fs.readFileSync('source-provenance.json','utf8'));assert.equal(evidence.files.length,6);

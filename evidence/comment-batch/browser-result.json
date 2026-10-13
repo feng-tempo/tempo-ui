@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "collapsed preview has first five; More expands and close collapses",
+    "keyboard focused NavBtn and tooltip; Space triggers collapse",
+    "blank create disabled; trimmed create updates consumer list",
+    "create error retains draft and successful retry clears it",
+    "edit cancel preserves original; dirty save forwards etag and shows edited metadata",
+    "etag conflict leaves editor/draft open; retry and cancel work",
+    "delete cancel preserves data and returns focus; rejected delete retries with audit",
+    "anchored confirmation cancellation once, success without cancellation",
+    "centered confirmation is masked, traps Tab and closes on Escape",
+    "consumer green highlight and disabled thread capabilities",
+    "narrow comments and confirmation stay within viewport",
+    "current source and package textarea/footer geometry and source-reference screenshots"
+  ],
+  "errors": [],
+  "remoteAttempts": [],
+  "warnings": [
+    "props.pointerEvents is deprecated. Use style.pointerEvents",
+    "Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md",
+    "props.pointerEvents is deprecated. Use style.pointerEvents"
+  ]
+}

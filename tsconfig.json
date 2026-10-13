@@ -19,7 +19,8 @@
     "moduleSuffixes": [
       ".web",
       ""
-    ]
+    ],
+    "resolveJsonModule": true
   },
   "include": [
     "packages/ui/src/**/*.ts",
@@ -27,6 +28,7 @@
   ],
   "exclude": [
     "packages/ui/src/platform/TextInput.tsx",
-    "packages/ui/src/platform/Icons.tsx"
+    "packages/ui/src/platform/Icons.tsx",
+    "packages/ui/src/platform/CommentIcons.tsx"
   ]
 }

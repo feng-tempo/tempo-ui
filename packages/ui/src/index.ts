@@ -12,3 +12,13 @@ export {DropdownPanelProvider,openDropdownPanel,closeDropdownPanel,updateDropdow
 export type {DropdownRequest} from './overlays/DropdownPanel';
 export {TempoThemeProvider,defaultTokens,useTempoTheme} from './theme';
 export type {TempoTokens} from './theme';
+
+export {default as NavBtn} from './actions/NavBtn';
+export type {NavBtnProps} from './actions/NavBtn';
+export {ConfirmPopup,openConfirmPopup} from './overlays/ConfirmPopup';
+export type {ConfirmPopupProps,OpenConfirmPopupArgs} from './overlays/ConfirmPopup';
+export {default as TempoCommentDisplay} from './comments/TempoCommentDisplay';
+export {default as TempoCommentPreviewList} from './comments/TempoCommentPreviewList';
+export {default as TempoCommentThreadCard} from './comments/TempoCommentThreadCard';
+export type {TempoCommentView,CommentMutationAdapters} from './comments/types';
+export {default as TooltipProvider} from './overlays/tooltip/TooltipProvider';
