@@ -1,0 +1,9 @@
+{
+  "source_revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "source": "components\\ui\\web\\form\\multiSelection.ts",
+  "sha256": "eff9d66410aee3835006ced96376afab67de6351de13624b1d671eb787f85f56",
+  "adaptations": [
+    "public props export",
+    "package-local imports"
+  ]
+}

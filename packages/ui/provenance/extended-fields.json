@@ -1,0 +1,218 @@
+{
+  "source_revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "files": [
+    {
+      "source": "components/ui/web/form/FieldClearButton.tsx",
+      "sha256": "0c0b1d4c73b49a10673979fec56b4a30af2abf2903579a4754782594bb68965d",
+      "staged": "packages/ui/src/fields/extended/FieldClearButton.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/DatePickerGroup.tsx",
+      "sha256": "e9523229fc65dbc2cc85c6abc42af52afc7e2c9d3af202ccca8d317f19c25f3d",
+      "staged": "packages/ui/src/fields/extended/DatePickerGroup.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/DropdownAsyncGroup.tsx",
+      "sha256": "f4ded4aa37dd41055191780379ba24e03597a81acf34b5fa398a2bf8d28c29b5",
+      "staged": "packages/ui/src/fields/extended/DropdownAsyncGroup.tsx",
+      "adaptations": [
+        "package-local imports; public props where present",
+        "consumer context adapters replace application services/notifications"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/InfoBox.tsx",
+      "sha256": "2616093b65d32094236ccc3965c8fa4dd1ff3442b3fab54a57fff32c5dd9f7a1",
+      "staged": "packages/ui/src/fields/extended/InfoBox.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/LookupField.tsx",
+      "sha256": "f531c85021a2545df89122d96b7922125dd037a48454948954f7c11e26036a8f",
+      "staged": "packages/ui/src/fields/extended/LookupField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present",
+        "consumer context adapters replace application services/notifications"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/FormTypes.tsx",
+      "sha256": "cffcd16c27460e5ab96278603a04cf91004cf6c4dbec5a86a069c20ca7b6f783",
+      "staged": "packages/ui/src/fields/extended/FormTypes.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/FormVisibilityHelpers.ts",
+      "sha256": "c37c8996905a030a9f566e4312b059fa7d06dd1f151b81961dcaa72d607d06c3",
+      "staged": "packages/ui/src/fields/extended/FormVisibilityHelpers.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/ReferenceDataSelectionField.tsx",
+      "sha256": "09ddbebe09190bd1027834594429bd7b8e1aa716ff27fb5329e5b8373f64a91e",
+      "staged": "packages/ui/src/fields/extended/ReferenceDataSelectionField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present",
+        "consumer context adapters replace application services/notifications"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/multiSelection.ts",
+      "sha256": "eff9d66410aee3835006ced96376afab67de6351de13624b1d671eb787f85f56",
+      "staged": "packages/ui/src/fields/extended/multiSelection.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/MultiDropdownField.tsx",
+      "sha256": "74615b1120bb7cc38dc8dd9133ffca1d064c0dbacd7ce61fc31bfe4769cfd894",
+      "staged": "packages/ui/src/fields/extended/MultiDropdownField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/CascadingMultiDropdown.tsx",
+      "sha256": "c5a14b52a0ea2e6c62454b048f47ee579ee0126695b3e67a23dd1c6605da289f",
+      "staged": "packages/ui/src/fields/extended/CascadingMultiDropdown.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/formLabelTypography.ts",
+      "sha256": "f584688843291c965b53f191b29ec5ec065864657c4bf1925d0cd7a716ce6e11",
+      "staged": "packages/ui/src/fields/extended/formLabelTypography.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/cascadingVisibility.ts",
+      "sha256": "f454ede59a415b832e9d92efcb4e13891c0802e3e48edacfc32b2de1328172e5",
+      "staged": "packages/ui/src/fields/extended/cascadingVisibility.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/DropdownCascadingGroup.tsx",
+      "sha256": "1b562cb42c123d2c12948701ab2aa7f556f5aca54b5743947cd75dfa3a6adc2a",
+      "staged": "packages/ui/src/fields/extended/DropdownCascadingGroup.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/JsonCodeEditorField.types.ts",
+      "sha256": "5f0dfccf3b43d63078e5a0af3e9908180fff1064c5cc0cb95dc42a876b444acf",
+      "staged": "packages/ui/src/fields/extended/JsonCodeEditorField.types.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/useJsonEditorDraft.ts",
+      "sha256": "eaad5b2953b35994d92ad7e7843c5ca03dc3961ab9d72d723cf7141b65767550",
+      "staged": "packages/ui/src/fields/extended/useJsonEditorDraft.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/JsonCodeEditorField.web.tsx",
+      "sha256": "5a142d51f0852f8d3928c6804d00d4858d31404f48b482843ad6647f287500f2",
+      "staged": "packages/ui/src/fields/extended/JsonCodeEditorField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/currencyPrefix.ts",
+      "sha256": "99dc11aa81ef3dc5f8a4182e180736855d8a8f3c2e16200ee3a34ad3cef67dab",
+      "staged": "packages/ui/src/fields/extended/currencyPrefix.ts",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/MoneyInputField.tsx",
+      "sha256": "2c9131bff17de0992449c28b569e14fb1cbad603d6816758d7435fe2d6e8aebb",
+      "staged": "packages/ui/src/fields/extended/MoneyInputField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/DorpdownSimple.tsx",
+      "sha256": "cae894668b600900fe430c1b23ed25f648ce579fdf7315e805ed3ae10a05ac0c",
+      "staged": "packages/ui/src/fields/extended/DorpdownSimple.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/MoneyWithCurrencyField.tsx",
+      "sha256": "7f07c8e08d16f14541048904ff36a48968291b1dd2af09a659e384beadc0e84c",
+      "staged": "packages/ui/src/fields/extended/MoneyWithCurrencyField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present",
+        "required currency selector has no clear action, per Feng"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/PercentageInputField.tsx",
+      "sha256": "bf2b6d5396b6a4cc75f6f2a5495a7d2f627a15244f795a6c1aa00c620e7a7c98",
+      "staged": "packages/ui/src/fields/extended/PercentageInputField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/DurationInputField.tsx",
+      "sha256": "8551bb0623e528bd78ff61e7f9693708642c828042167688599ce657ab54e0f6",
+      "staged": "packages/ui/src/fields/extended/DurationInputField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/FileUploadField.tsx",
+      "sha256": "db3ed1ea131be1998f07499e9c1b6de01a43f06719ec3fcb36bf95ef6c574770",
+      "staged": "packages/ui/src/fields/extended/FileUploadField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present"
+      ]
+    },
+    {
+      "source": "components/ui/web/form/BaseUploadField.tsx",
+      "sha256": "6f7150c9ff2729fec1531af94f592c8612f294186108bc04a45c66098218cb40",
+      "staged": "packages/ui/src/fields/extended/BaseUploadField.tsx",
+      "adaptations": [
+        "package-local imports; public props where present",
+        "consumer context adapters replace application services/notifications"
+      ]
+    }
+  ],
+  "web_staging_notes": [
+    "RNWeb Pressable hover/web StyleSheet typing only; original dimensions/styles retained",
+    "Icons embed existing licensed font assets",
+    "Type-only SetValueConfig is local; no RHF runtime dependency",
+    "Overlay passes original collision/width preference but ignores source animation hint",
+    "Lookup portal reads consumer adapter context itself",
+    "JSON resolves the original web implementation, not the native fallback"
+  ]
+}

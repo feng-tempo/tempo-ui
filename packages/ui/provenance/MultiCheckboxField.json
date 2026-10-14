@@ -1,0 +1,9 @@
+{
+  "source_revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "source": "components\\ui\\web\\form\\MultiCheckboxField.tsx",
+  "sha256": "a7d1190b629fc7532a481137fd38246e95c052c5e15b8bcdfba4e54133cba139",
+  "adaptations": [
+    "public props export",
+    "package-local imports"
+  ]
+}

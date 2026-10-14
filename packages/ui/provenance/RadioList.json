@@ -1,0 +1,10 @@
+{
+  "source_revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "source": "components\\ui\\web\\form\\RadioList.tsx",
+  "sha256": "9bb45499d0b35834c55a73057ca134a08df6bda99e3cb04b7ea891328a4a5d07",
+  "adaptations": [
+    "public props export",
+    "package-local imports",
+    "web radio semantics/Space/arrows; horizontal group column gap16"
+  ]
+}

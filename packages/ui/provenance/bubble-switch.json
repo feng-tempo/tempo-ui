@@ -1,0 +1,11 @@
+{
+  "source": "../tempomobileapp/components/ui/web/form/BubbleSwitch.tsx",
+  "revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "sourceSha256": "96c69fc43535e5c6cee147eb9a1652cd4ee0722c2f2e38a1526a5818c946e002",
+  "adaptations": [
+    "export BubbleSwitchProps type",
+    "explicit web aria-checked bridge; React Native Web 0.19 does not emit checked from accessibilityState",
+    "web Space keyboard activation; RNW PressResponder supports Enter but only treats button-role elements as Space-activated"
+  ],
+  "ownership": "staging; original mobileapp unchanged"
+}

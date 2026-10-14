@@ -1,5 +1,7 @@
 export const demoOptions=[{label:'Design',value:'design'},{label:'Engineering',value:'engineering'},{label:'Operations',value:'operations'}];
-const pause=()=>new Promise(resolve=>setTimeout(resolve,100));
+let failNext=false;
+export function failNextMockRequest(){failNext=true;}
+const pause=async()=>{await new Promise(resolve=>setTimeout(resolve,100));if(failNext){failNext=false;throw Error('Local sample request failed once. Reload and try again.');}};
 export async function loadDropdownPageFromConfig(config:any,page=1){
  if(!String(config.endpoint).startsWith('mock:'))throw new Error('Catalogue accepts local mock endpoints only');
  await pause();return {options:page===1?demoOptions:[],hasMore:false,total:demoOptions.length};
@@ -13,10 +15,12 @@ export async function loadLookupPageFromConfig(config:any,args:{page:number;page
 }
 let uploadCount=0;
 export async function uploadFile({file,fileName,uploadSessionId}:{file:File;fileName:string;uploadSessionId:string}){
- await pause();return {fileId:`local-${++uploadCount}`,fileName,originalFileName:fileName,blobPath:`mock/${fileName}`,contentType:file.type,size:file.size,status:'temp',uploadSessionId};
+ await pause();return {fileId:`local-${++uploadCount}`,fileName,originalFileName:fileName,blobPath:`mock/${fileName}`,contentType:file.type,size:file.size,status:'temp' as const,uploadSessionId};
 }
 export async function deleteFile(_args:{fileId:string}){await pause();return {deleted:true};}
 let notification='';const listeners=new Set<()=>void>();
 export function openNotificationPanel(message:{title?:string;message?:string}){notification=[message.title,message.message].filter(Boolean).join(': ');listeners.forEach(fn=>fn());}
 export function closeNotificationPanel(){notification='';listeners.forEach(fn=>fn());}
 export const notificationStore={subscribe(fn:()=>void){listeners.add(fn);return ()=>{listeners.delete(fn);};},snapshot(){return notification;}};
+
+export const fieldAdapters={loadDropdownPageFromConfig,loadLookupPageFromConfig,uploadFile,deleteFile,openNotificationPanel,closeNotificationPanel};

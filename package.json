@@ -6,14 +6,24 @@
   "scripts": {
     "build": "node tools/build.mjs",
     "serve": "node tools/serve.mjs",
-    "test": "node --test --test-isolation=none tests/package.test.mjs"
+    "test": "node --test --test-isolation=none tests/package.test.mjs",
+    "start": "node tools/start-expo.mjs",
+    "build:expo": "node tools/export-expo.mjs",
+    "typecheck:expo": "tsc -p tsconfig.expo.json --pretty false"
   },
   "dependencies": {
+    "@babel/runtime": "7.28.6",
     "@codemirror/lang-json": "6.0.2",
     "@codemirror/lint": "6.9.7",
     "@codemirror/view": "6.43.9",
+    "@expo/metro-runtime": "4.0.1",
+    "@tempo/ui": "link:packages/ui",
     "@uiw/react-codemirror": "4.25.11",
     "date-fns": "4.1.0",
+    "expo": "52.0.48",
+    "expo-asset": "11.0.5",
+    "expo-constants": "17.0.8",
+    "expo-font": "13.0.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native-web": "0.19.13"
@@ -25,5 +35,6 @@
     "esbuild": "0.25.12",
     "react-native": "0.76.9",
     "typescript": "5.9.3"
-  }
+  },
+  "main": "apps/expo-web/index.ts"
 }

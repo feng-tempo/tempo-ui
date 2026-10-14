@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Australia/Sydney",
+  "scope": "WEB ONLY local staging",
+  "editableFields": 21,
+  "expoComponents": 27,
+  "package": "@tempo/ui@0.1.0-dev.4",
+  "packageTests": 17,
+  "expoRegressionChecks": 12,
+  "homeChecks": 5,
+  "extendedChecks": 13,
+  "fieldStatesChecks": 18,
+  "catalogueChecks": 20,
+  "legacyControlChecks": 14,
+  "commentChecks": 12,
+  "packedMatchedFiles": 230,
+  "productionWebExport": true,
+  "checkboxes": "Tempo CheckBox in shell, settings and field options",
+  "limits": [
+    "Native/mobile migration and production API integration untested",
+    "Web staging overlay animation differs from production host",
+    "Unspecified layout issues remain for user review"
+  ],
+  "commitPushDeploy": false
+}

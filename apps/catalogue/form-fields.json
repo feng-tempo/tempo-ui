@@ -11,7 +11,7 @@
     "component": "DateInput",
     "source": "components/ui/web/form/DatePickerGroup.tsx",
     "source_sha256": "306b17e2f3d4df8682db57f32805101f1cdac3f474d13f35192cb7b62f80f6ad",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "dropdown",
@@ -25,70 +25,70 @@
     "component": "AsyncDropdown",
     "source": "components/ui/web/form/DropdownAsyncGroup.tsx",
     "source_sha256": "f4ded4aa37dd41055191780379ba24e03597a81acf34b5fa398a2bf8d28c29b5",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "lookup",
     "component": "LookupField",
     "source": "components/ui/web/form/LookupField.tsx",
     "source_sha256": "f531c85021a2545df89122d96b7922125dd037a48454948954f7c11e26036a8f",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "referenceData",
     "component": "ReferenceDataSelectionField",
     "source": "components/ui/web/form/ReferenceDataSelectionField.tsx",
     "source_sha256": "09ddbebe09190bd1027834594429bd7b8e1aa716ff27fb5329e5b8373f64a91e",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "multiCheckbox",
     "component": "MultiCheckboxField",
     "source": "components/ui/web/form/MultiCheckboxField.tsx",
     "source_sha256": "a7d1190b629fc7532a481137fd38246e95c052c5e15b8bcdfba4e54133cba139",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "multiDropdown",
     "component": "MultiDropdownField",
     "source": "components/ui/web/form/MultiDropdownField.tsx",
     "source_sha256": "74615b1120bb7cc38dc8dd9133ffca1d064c0dbacd7ce61fc31bfe4769cfd894",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "cascadingMultiDropdown",
     "component": "CascadingMultiDropdown",
     "source": "components/ui/web/form/CascadingMultiDropdown.tsx",
     "source_sha256": "c5a14b52a0ea2e6c62454b048f47ee579ee0126695b3e67a23dd1c6605da289f",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "cascadingDropdown",
     "component": "CascadingDropdown",
     "source": "components/ui/web/form/DropdownCascadingGroup.tsx",
     "source_sha256": "1b562cb42c123d2c12948701ab2aa7f556f5aca54b5743947cd75dfa3a6adc2a",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "bubbleSwitch",
     "component": "BubbleSwitch",
     "source": "components/ui/web/form/BubbleSwitch.tsx",
     "source_sha256": "96c69fc43535e5c6cee147eb9a1652cd4ee0722c2f2e38a1526a5818c946e002",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "radio",
     "component": "RadioList",
     "source": "components/ui/web/form/RadioList.tsx",
     "source_sha256": "9bb45499d0b35834c55a73057ca134a08df6bda99e3cb04b7ea891328a4a5d07",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "longText",
     "component": "TextAreaField",
     "source": "components/ui/web/form/TextAreaField.tsx",
     "source_sha256": "ef2c9cb29aff5c89afb50c93f9082e8fc2c954e7c766ff6885f2bc46eee314e8",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "checkbox",
@@ -102,28 +102,28 @@
     "component": "JsonCodeEditorField",
     "source": "components/ui/web/form/JsonCodeEditorField.tsx",
     "source_sha256": "52aa3f46a0105b0c4e1131eae884f029e4cb3adf10e288a4df256135f8cc458e",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "money",
     "component": "MoneyInputField",
     "source": "components/ui/web/form/MoneyInputField.tsx",
     "source_sha256": "2c9131bff17de0992449c28b569e14fb1cbad603d6816758d7435fe2d6e8aebb",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "moneyWithCurrency",
     "component": "MoneyWithCurrencyField",
     "source": "components/ui/web/form/MoneyWithCurrencyField.tsx",
     "source_sha256": "7f07c8e08d16f14541048904ff36a48968291b1dd2af09a659e384beadc0e84c",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "percentage",
     "component": "PercentageInputField",
     "source": "components/ui/web/form/PercentageInputField.tsx",
     "source_sha256": "bf2b6d5396b6a4cc75f6f2a5495a7d2f627a15244f795a6c1aa00c620e7a7c98",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "number",
@@ -137,13 +137,13 @@
     "component": "DurationInputField",
     "source": "components/ui/web/form/DurationInputField.tsx",
     "source_sha256": "8551bb0623e528bd78ff61e7f9693708642c828042167688599ce657ab54e0f6",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   },
   {
     "type": "fileUpload",
     "component": "FileUploadFieldWrapper",
     "source": "components/ui/web/form/BaseUploadField.tsx",
     "source_sha256": "6f7150c9ff2729fec1531af94f592c8612f294186108bc04a45c66098218cb40",
-    "mode": "read-only actual-source preview"
+    "mode": "packaged control"
   }
 ]

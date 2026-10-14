@@ -1,10 +1,16 @@
 # Tempo UI library and form-field catalogue
 
-Five packaged controls, a UI-only dropdown host/theme provider, typed exports and a full 21-editable-field local catalogue. **Future authoritative library under development.** Production mobileapp is unchanged; no migration/ownership transfer has occurred. Temporary implementation overlap is intentional staging.
+Twenty-one packaged editable fields, six action/comment components, UI-only hosts, typed exports and Expo/full-catalogue demonstrations. **Future authoritative library under development.** Production mobileapp is unchanged; no migration/ownership transfer has occurred. Temporary implementation overlap is intentional staging.
 
 The project is at `outputs/TempoMobileApp/tempo-ui`, separate from T-2026-0023. Root tempoagent/tempoagenttasks are canonical. The three approved redundant repository copies were moved recoverably to Windows Recycle Bin; unique histories remain in canonical numbered task logs. Implementation milestones are in the canonical root [tempoagenttasks task T-2026-0042](../tempoagenttasks/tasks/t-2026-0042/task.md), logs 004–008. Earlier planning is preserved in canonical numbered task logs.
 
 ## Open
+
+Current local **@tempo/ui@0.1.0-dev.4** covers all 21 editable FieldComponentMapping types with public web exports and Expo pages (27 components including six actions/comments). Selection/extended fields have `@tempo/ui/fields/selection` and `@tempo/ui/fields/extended` subpaths; root exports are equivalent. All checkbox settings/options use Tempo CheckBox. Source controls keep their metrics; demo sections own gap16, labels/input gap8 and action gap12. Top Navigation/Highlight remain removed; home retains Card/Banner BubbleSwitch and eye/View NavBtn.
+
+Use `FieldAdaptersProvider` ABOVE `DropdownPanelProvider` for typed consumer option/lookup/upload/removal/notification adapters, including portal content. Demonstrations use local mock endpoints and file metadata, with failure/reload examples; production API modules are excluded. date-fns/CodeMirror web editor are bundled from pinned existing dependencies. Staging provenance is in packages/ui/provenance. Native/mobile, real service integration and full production parity remain unverified; the isolated web overlay does not implement the source host's animation hint. Prior artifacts/history retained; no publication/deployment.
+
+**Expo Web demo:** `npm start` serves [localhost:8085](http://localhost:8085/), with all 21 editable fields and six action/comment pages. The 4173 full catalogue uses the same packaged fields. See [startup and checks](apps/expo-web/README.md).
 
 GitHub repository: [feng-tempo/tempo-ui](https://github.com/feng-tempo/tempo-ui), initial development branch `beta`. Feng authorized committing and pushing this project to `beta` on 12 October 2026. Canonical task history remains in sibling tempoagenttasks (T-2026-0042, log 013); earlier no-push statements below describe prior gates. The catalogue currently requires sibling tempomobileapp sources and browser tests use local runtime paths.
 
@@ -38,7 +44,7 @@ This browser pilot uses **React Native Web + esbuild**, without installing or st
 
 | TempoThemeProvider / TempoTokens | @tempo/ui/theme | optional typed override; control border/primary and overlay layer used by pilot |
 
-Root exports are a convenience for the five-control pilot; subpaths are available for narrower consumers. React/React DOM/RN Web are consumer peers for browser use. Native peers are declared optional so the web fixture can run; native support is not certified. React DOM is required when using the web overlay.
+Root exports cover the staged web fields and action/comment components; subpaths are available for narrower consumers. React/React DOM/RN Web are consumer peers for browser use. Native peers are declared optional so the web fixture can run; native support is not certified. React DOM is required when using the web overlay.
 
 ```tsx
 
@@ -105,7 +111,7 @@ The original six mobileapp files are compiled read-only in the [source compariso
 
 All 21 editable types in canonical FieldComponentMapping are shown: text, date, dropdown, asyncDropdown, lookup, referenceData, multiCheckbox, multiDropdown, cascadingMultiDropdown, cascadingDropdown, bubbleSwitch, radio, longText, checkbox, json, money, moneyWithCurrency, percentage, number, duration and fileUpload.
 
-The first four editable controls plus GButton use the built library. Other 17 previews compile the actual adjacent canonical mobileapp source read-only with explicit local service/overlay/icon ports. They are not yet public library exports. No app component/import/dependency/lockfile migration is performed. Lookup and upload operations use local sample data only; source production API modules cannot enter the preview build. Source read-only/review/presentational/list mappings are separate from this editable-field catalogue.
+All 21 editable fields use built package exports, with local data-backed/upload consumer adapters. Source read-only/review/presentational/list mappings remain separate from this editable-field catalogue.
 
 Single-line host has no fixed height: source padding/font/border metrics produce 27px text/number/dropdown surfaces in the current Chrome demo, with centered dropdown text. Multiline/JSON/upload controls retain their appropriate source sizing; JSON has an explicit bounded editor viewport. See [latest task log](../tempoagenttasks/tasks/t-2026-0042/logs/008-full-form-field-catalogue.md). Run `node tests/full-catalogue.mjs` for full coverage/interactions and responsive checks. Original date/JSON dependency versions are pinned locally for the showcase; lifecycle scripts were disabled during setup.
 
@@ -113,7 +119,7 @@ Current verification: 20 full-catalogue checks, 14 legacy browser regressions, b
 
 ## Approved comment/action batch (13 October 2026)
 
-@tempo/ui@0.1.0-dev.2 adds **five packaged components**: TempoCommentDisplay, TempoCommentPreviewList, NavBtn, ConfirmPopup and TempoCommentThreadCard. Import comments from @tempo/ui/comments, NavBtn/TooltipProvider from @tempo/ui/actions/nav and ConfirmPopup/openConfirmPopup from @tempo/ui/overlays/confirm; root exports are equivalent. Theme/DropdownPanelProvider remain shared UI hosts. Textarea and compact error presentation are internal thread support, not newly exported fields. The 21-field catalogue still has four packaged field rows and 17 read-only source preview rows.
+Historical dev.2 added **five packaged components**: TempoCommentDisplay, TempoCommentPreviewList, NavBtn, ConfirmPopup and TempoCommentThreadCard. Import comments from @tempo/ui/comments, NavBtn/TooltipProvider from @tempo/ui/actions/nav and ConfirmPopup/openConfirmPopup from @tempo/ui/overlays/confirm; root exports are equivalent. Theme/DropdownPanelProvider remain shared UI hosts. Textarea and compact error presentation are internal thread support, not newly exported fields. The later dev.4 batch promotes all 21 editable fields to public web exports.
 
 The live local catalogue contains collapsed preview/full thread, permissions, local add/edit/delete, failure/conflict/retry, card and anchored/centered confirmation examples. More expansion is consumer-owned. Display/preview preserve source plain-text selectable content, friendly date formatter and earliest-first preview slice. Full thread uses consumer order.
 

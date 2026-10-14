@@ -7,3 +7,8 @@ node_modules/
 dist/
 packages/ui/dist/
 artifacts/
+.expo/
+expo-dist/
+
+# Batch scratch scripts
+work/

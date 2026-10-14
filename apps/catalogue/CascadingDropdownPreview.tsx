@@ -1,5 +1,5 @@
 import {useLayoutEffect,useRef} from 'react';
-import CascadingDropdown from 'mobile-field:cascadingDropdown';
+import {CascadingDropdown} from '@tempo/ui';
 
 // Web-preview adapter: the source connector's fixed bottom does not track
 // the following label's line box. Keep its start/width and align its endpoint.

@@ -1,0 +1,15 @@
+import {BubbleSwitch} from '@tempo/ui/fields/switch';
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import React from 'react';import {renderToStaticMarkup} from 'react-dom/server';import * as ui from '@tempo/ui';import {TempoCommentDisplay} from '@tempo/ui/comments';
+const selection=await import('@tempo/ui/fields/selection'),extended=await import('@tempo/ui/fields/extended');for(const sub of [selection,extended])for(const [name,value]of Object.entries(sub))assert.equal(ui[name],value,name);
+for(const f of JSON.parse(fs.readFileSync('../../../apps/catalogue/form-fields.json','utf8')))assert.ok(ui[f.component],f.type);
+const require=createRequire(import.meta.url);
+const source=path.resolve('../../../packages/ui'),installed=path.resolve('node_modules/@tempo/ui');
+assert.equal(ui.TempoCommentDisplay,TempoCommentDisplay);assert.equal(ui.BubbleSwitch,BubbleSwitch);assert.match(renderToStaticMarkup(React.createElement(BubbleSwitch,{value:true,variant:"choice",falseLabel:"Card",trueLabel:"Banner"})),/aria-checked="true"/);
+assert.match(renderToStaticMarkup(React.createElement(ui.TextInputField,{value:'Packed Expo',disabled:true})),/Packed Expo/);
+const pkg=JSON.parse(fs.readFileSync(installed+'/package.json','utf8'));
+assert.deepEqual(pkg.exports,JSON.parse(fs.readFileSync(source+'/package.json','utf8')).exports);
+assert.equal(Object.keys(pkg.exports['.'])[1],'browser');
+assert.equal(require.resolve('react'),createRequire(require.resolve('@tempo/ui')).resolve('react'));
+let files=0;function compare(dir){for(const item of fs.readdirSync(source+'/'+dir,{withFileTypes:true})){const rel=dir+'/'+item.name;if(item.isDirectory())compare(rel);else{assert.equal(fs.readFileSync(source+'/'+rel).compare(fs.readFileSync(installed+'/'+rel)),0,rel);files++;}}}compare('src');compare('dist');
+const result={passed:true,checks:['root/comment/switch identity and packed text/switch render','all exports match including browser priority','single React runtime','source/dist bytes match packed artifact'],matchedFiles:files};
+fs.writeFileSync('../../../../T-2026-0042-pilot/evidence/expo-packed-consumer-result.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));

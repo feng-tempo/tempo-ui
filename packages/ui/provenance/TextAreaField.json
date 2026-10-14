@@ -1,0 +1,9 @@
+{
+  "source_revision": "c94944ae7ca3702eb2c273a5aace1e32fb245988",
+  "source": "components\\ui\\web\\form\\TextAreaField.tsx",
+  "sha256": "ef2c9cb29aff5c89afb50c93f9082e8fc2c954e7c766ff6885f2bc46eee314e8",
+  "adaptations": [
+    "public props export",
+    "package-local imports"
+  ]
+}

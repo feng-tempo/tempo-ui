@@ -22,3 +22,13 @@ export {default as TempoCommentPreviewList} from './comments/TempoCommentPreview
 export {default as TempoCommentThreadCard} from './comments/TempoCommentThreadCard';
 export type {TempoCommentView,CommentMutationAdapters} from './comments/types';
 export {default as TooltipProvider} from './overlays/tooltip/TooltipProvider';
+
+export {default as BubbleSwitch} from './fields/BubbleSwitch';
+export type {BubbleSwitchProps} from './fields/BubbleSwitch';
+
+export {TextAreaField,RadioList,MultiCheckboxField} from "./entries/selection";
+export type {TextAreaFieldProps} from "./fields/TextAreaField";
+export type {RadioListProps,RadioOption} from "./fields/RadioList";
+export type {MultiCheckboxFieldProps} from "./fields/MultiCheckboxField";
+
+export * from "./entries/extended";

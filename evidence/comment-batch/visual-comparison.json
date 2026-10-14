@@ -9,6 +9,5 @@
   "limits": [
     "source comments and textarea compiled read-only",
     "not a production shell/native rendering"
-  ],
-  "editFocusPngBytesEqual": true
+  ]
 }
